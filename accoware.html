@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./accoware.css">
+    <script src="./script.js"></script>
+    <script src="server.js"></script>
+    <script src="app.js">n</script>
+
+</head>
+
+<body>
+    <header>
+        <h1>News Reader</h1>
+        <form id="search-form">
+            <input type="text" id="search-bar" placeholder="Search News">
+            <button type="submit">Go</button>
+        </form>
+    </header>
+    <main>
+        <section class="news-feed">
+            <article>
+                <img src="https://marshpartners.com.au/wp-content/uploads/2023/06/stages-of-business-growth.jpg" alt="">
+                <h2>Headline 1</h2>
+                <p>The term business refers to an organization or enterprising entity engaged in commercial, industrial,
+                    or professional activities. The purpose of a business is to organize some sort of economic
+                    production of goods or services. Businesses can be for-profit entities or non-profit organizations
+                    fulfilling a charitable mission or furthering a social cause. Businesses range in scale and scope
+                    from sole proprietorships to large, international corporations.</p>
+                <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Technology_Trends.jpg" alt="">
+                <h1>Headline 2</h1>
+                <p>Technology is a necessity of the modern lifestyle. Every day there are new ideas and advancements in
+                    the technology as the world becomes more involved in discovering and utilizing the potential of
+                    natural resources. Technology has improved human lives significantly by providing convenience and
+                    efficiency.</p>
+            </article>
+        </section>
+        <aside class="sidebar">
+            <h2>categories</h2>
+            <ul>
+                <li><a href="https://epaper.thehindubusinessline.com/reader" onclick="getArticlesByCategory('business')"
+                        target="_blank">
+                        Bussiness</a></li>
+                <li><a href="https://indianexpress.com/section/technology/"
+                        onclick="getArticlesByCategory('technology')">
+                        Technology</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        © News Reader 2024
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
